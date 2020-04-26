@@ -1,4 +1,5 @@
-"accounts": [
+{
+    "accounts": [
         {
             "_id": "5cf6135d386f5942aabca326",
             "code": "501020",
@@ -4503,7 +4504,7 @@
         {
             "_id": "5cf614ba386f5942aabca33b",
             "code": "PL22",
-            "formula": "(ACVALUE(501011)+ACVALUE(501010))+(ACVALUE(501021)+ACVALUE(501020))+(ACVALUE(501030)+ACVALUE(501031))+(ACVALUE(501040))+PLVALUE(X)",
+            "formula": "PLVALUE(PL1)+PLVALUE(PL2)+PLVALUE(PL3)+PLVALUE(PL4)+PLVALUE(X)",
             "status": 0,
             "type": 2,
             "parents": [
@@ -4721,7 +4722,7 @@
         {
             "_id": "5cf6159f386f5942aabca347",
             "code": "PL10",
-            "formula": "(ACVALUE(PL6A)+ACVALUE(PL6B))+(ACVALUE(PL9))+(ACVALUE(PL7B)+ACVALUE(PL7A))+(ACVALUE(PL8A)+ACVALUE(PL8B))+(ACVALUE(DSRGP))",
+            "formula": "PLVALUE(PL6)+PLVALUE(PL9)+PLVALUE(PL7)+PLVALUE(PL8)+PLVALUE(PL_DSRGP)",
             "status": 1,
             "type": 2,
             "parents": [
@@ -4910,7 +4911,7 @@
         {
             "_id": "5cf61741386f5942aabca364",
             "code": "PL15",
-            "formula": "(ACVALUE(511000)+ACVALUE(735013)+ACVALUE(511100))+(ACVALUE(511002)+ACVALUE(511101)+ACVALUE(554020)+ACVALUE(735015))+(ACVALUE(511003)+ACVALUE(511102)+ACVALUE(735016))+(ACVALUE(511004)+ACVALUE(554010)+ACVALUE(554021)+ACVALUE(735017)+ACVALUE(554030))",
+            "formula": "PLVALUE(PL11)+PLVALUE(PL12)+PLVALUE(PL13)+PLVALUE(PL14)",
             "status": 1,
             "type": 2,
             "parents": [
@@ -4957,7 +4958,7 @@
         {
             "_id": "5cf61756386f5942aabca365",
             "code": "PL28",
-            "formula": "((ACVALUE(PL6A)+ACVALUE(PL6B))+(ACVALUE(PL9))+(ACVALUE(PL7B)+ACVALUE(PL7A))+(ACVALUE(PL8A)+ACVALUE(PL8B))+(ACVALUE(DSRGP)))+((ACVALUE(511000)+ACVALUE(735013)+ACVALUE(511100))+(ACVALUE(511002)+ACVALUE(511101)+ACVALUE(554020)+ACVALUE(735015))+(ACVALUE(511003)+ACVALUE(511102)+ACVALUE(735016))+(ACVALUE(511004)+ACVALUE(554010)+ACVALUE(554021)+ACVALUE(735017)+ACVALUE(554030)))",
+            "formula": "PLVALUE(PL10)+PLVALUE(PL15)",
             "status": 1,
             "type": 2,
             "parents": [
@@ -4990,7 +4991,7 @@
         {
             "_id": "5cf8c18d4aafe73cb56ce3ee",
             "code": "PL91",
-            "formula": "(PLVALUE(PL74)+PLVALUE(PL78)-PLVALUE(PL86)) - (ACVALUE(801010)) - ()",
+            "formula": "PLVALUE(PL87) - PLVALUE(PL88) - PLVALUE(PL89)",
             "status": 1,
             "type": 2,
             "parents": [],
@@ -5090,7 +5091,7 @@
         {
             "_id": "5cf8c2684aafe73cb56ce3f4",
             "code": "PL86",
-            "formula": "(ACVALUE(731010))+(ACVALUE(781011)+ACVALUE(781010))+()+()+(ACVALUE(781012))+()+()",
+            "formula": "PLVALUE(PL79)+PLVALUE(PL80)+PLVALUE(PL81)+PLVALUE(PL82)+PLVALUE(PL83)+PLVALUE(PL85)+PLVALUE(PL84)",
             "status": 1,
             "type": 2,
             "parents": [
@@ -5293,7 +5294,7 @@
         {
             "_id": "5cf8c3bc4aafe73cb56ce3fb",
             "code": "PL78",
-            "formula": "()+(ACVALUE(731010))+()",
+            "formula": "PLVALUE(PL76)+PLVALUE(PL75)+PLVALUE(PL77)",
             "status": 1,
             "type": 2,
             "parents": [
@@ -5394,7 +5395,7 @@
         {
             "_id": "5cf8c41e4aafe73cb56ce3ff",
             "code": "PL74",
-            "formula": "(PLVALUE(PL30) - PLVALUE(PL57))+(PLVALUE(PL59)+PLVALUE(PL61)+PLVALUE(PL65))-(PLVALUE(PL67)+PLVALUE(PL69)+PLVALUE(PL72))",
+            "formula": "PLVALUE(PL58)+PLVALUE(PL66)-PLVALUE(PL73)",
             "status": 1,
             "type": 2,
             "parents": [
@@ -5434,7 +5435,7 @@
         {
             "_id": "5cf8c43c4aafe73cb56ce400",
             "code": "PL73",
-            "formula": "(ACVALUE(751020)+ACVALUE(751010)+ACVALUE(751000)+ACVALUE(752010))+()+(ACVALUE(851010)+ACVALUE(852010)+ACVALUE(771000))",
+            "formula": "PLVALUE(PL67)+PLVALUE(PL69)+PLVALUE(PL72)",
             "status": 1,
             "type": 2,
             "parents": [
@@ -5591,7 +5592,7 @@
         {
             "_id": "5cf8c4964aafe73cb56ce404",
             "code": "PL66",
-            "formula": "PLVALUE(PL59)+()+(ACVALUE(725010)+ACVALUE(725011)+ACVALUE(725030)+ACVALUE(725031)+ACVALUE(735010)+ACVALUE(735011)+ACVALUE(731020)+ACVALUE(732010)+ACVALUE(736010))",
+            "formula": "PLVALUE(PL59)+PLVALUE(PL61)+PLVALUE(PL65)",
             "status": 1,
             "type": 2,
             "parents": [
@@ -5759,7 +5760,7 @@
         {
             "_id": "5cf8c4ed4aafe73cb56ce408",
             "code": "PL58",
-            "formula": "(PLVALUE(PL28)+PLVALUE(PL26)) - PLVALUE(PL57)",
+            "formula": "PLVALUE(PL30) - PLVALUE(PL57)",
             "status": 1,
             "type": 2,
             "parents": [
@@ -5785,7 +5786,7 @@
         {
             "_id": "5cf8c5044aafe73cb56ce409",
             "code": "PL57",
-            "formula": "(PLVALUE(PL50)+PLVALUE(PL51)+PLVALUE(PL52)+PLVALUE(PL53)+PLVALUE(PL55)+PLVALUE(PL54))+(PLVALUE(PL48)+PLVALUE(PL47)+PLVALUE(PL46)+PLVALUE(PL45)+PLVALUE(PL43)+PLVALUE(PL44)+PLVALUE(PL42)+PLVALUE(PL41))+(PLVALUE(PL36)+PLVALUE(PL37)+PLVALUE(PL38)+PLVALUE(PL39))+(PLVALUE(PL31)+PLVALUE(PL32)+PLVALUE(PL33)+PLVALUE(PL34))",
+            "formula": "PLVALUE(PL56)+PLVALUE(PL49)+PLVALUE(PL40)+PLVALUE(PL35)",
             "status": 0,
             "type": 2,
             "parents": [
@@ -5832,7 +5833,7 @@
         {
             "_id": "5cf8c51a4aafe73cb56ce40a",
             "code": "PL56",
-            "formula": "(ACVALUE(661000)+ACVALUE(661020)+ACVALUE(661010))+(ACVALUE(663010)+ACVALUE(663020)+ACVALUE(662010)+ACVALUE(662000))+(ACVALUE(688010)+ACVALUE(668010)+ACVALUE(668000))+(ACVALUE(664010)+ACVALUE(687010)+ACVALUE(664020)+ACVALUE(687030)+ACVALUE(664000)+ACVALUE(687000)+ACVALUE(664030)+ACVALUE(687020)+ACVALUE(664001))+(ACVALUE(HQ exp)+ACVALUE(666020)+ACVALUE(665010)+ACVALUE(665020)+ACVALUE(666010)+ACVALUE(667000)+ACVALUE(667020)+ACVALUE(667100)+ACVALUE(667101)+ACVALUE(671020)+ACVALUE(672010)+ACVALUE(672011)+ACVALUE(672012)+ACVALUE(681010)+ACVALUE(682010)+ACVALUE(682210)+ACVALUE(682211)+ACVALUE(683010)+ACVALUE(684010)+ACVALUE(684020)+ACVALUE(685010)+ACVALUE(686010)+ACVALUE(667010)+ACVALUE(692010)+ACVALUE(691010)+ACVALUE(692020)+ACVALUE(693010)+ACVALUE(692030)+ACVALUE(693030)+ACVALUE(688020)+ACVALUE(692040)+ACVALUE(693020)+ACVALUE(681020))+()",
+            "formula": "PLVALUE(PL50)+PLVALUE(PL51)+PLVALUE(PL52)+PLVALUE(PL53)+PLVALUE(PL55)+PLVALUE(PL54)",
             "status": 1,
             "type": 2,
             "parents": [],
@@ -6688,7 +6689,7 @@
         {
             "_id": "5cf8c6b74aafe73cb56ce41a",
             "code": "PL40",
-            "formula": "(ACVALUE(624011)+ACVALUE(624010)+ACVALUE(623040)+ACVALUE(623030)+ACVALUE(621030)+ACVALUE(621020)+ACVALUE(629010)+ACVALUE(621010)+ACVALUE(628010)+ACVALUE(623010)+ACVALUE(623020)+ACVALUE(623041)+ACVALUE(623050)+ACVALUE(623051)+ACVALUE(624012))+(ACVALUE(622010))+(ACVALUE(668020)+ACVALUE(634020)+ACVALUE(634010)+ACVALUE(633060)+ACVALUE(633050)+ACVALUE(634000)+ACVALUE(633020)+ACVALUE(633040)+ACVALUE(632010)+ACVALUE(626010)+ACVALUE(633070)+ACVALUE(632000)+ACVALUE(633030)+ACVALUE(633010)+ACVALUE(635010)+ACVALUE(635011))+(ACVALUE(627010)+ACVALUE(625010))",
+            "formula": "PLVALUE(PL36)+PLVALUE(PL37)+PLVALUE(PL38)+PLVALUE(PL39)",
             "status": 1,
             "type": 2,
             "parents": [],
@@ -7007,7 +7008,7 @@
         {
             "_id": "5cf8c7264aafe73cb56ce41f",
             "code": "PL35",
-            "formula": "(ACVALUE(605010)+ACVALUE(603010)+ACVALUE(604010)+ACVALUE(603030)+ACVALUE(601020)+ACVALUE(603000)+ACVALUE(603040)+ACVALUE(601010)+ACVALUE(601011)+ACVALUE(601030)+ACVALUE(603020)+ACVALUE(603050)+ACVALUE(603011)+ACVALUE(603012)+ACVALUE(603013))+(ACVALUE(602010))+(ACVALUE(607010)+ACVALUE(607020)+ACVALUE(606010))+(ACVALUE(614010)+ACVALUE(611080)+ACVALUE(611000)+ACVALUE(608010)+ACVALUE(614020)+ACVALUE(611050)+ACVALUE(609020)+ACVALUE(611040)+ACVALUE(613010)+ACVALUE(612020)+ACVALUE(611030)+ACVALUE(609010)+ACVALUE(611060)+ACVALUE(612010)+ACVALUE(611090)+ACVALUE(611010)+ACVALUE(605020)+ACVALUE(611070)+ACVALUE(609030)+ACVALUE(611020))",
+            "formula": "PLVALUE(PL31)+PLVALUE(PL32)+PLVALUE(PL33)+PLVALUE(PL34)",
             "status": 1,
             "type": 2,
             "parents": [],
@@ -7350,7 +7351,7 @@
         {
             "_id": "5cf8c78b4aafe73cb56ce424",
             "code": "PL30",
-            "formula": "(((ACVALUE(PL6A)+ACVALUE(PL6B))+(ACVALUE(PL9))+(ACVALUE(PL7B)+ACVALUE(PL7A))+(ACVALUE(PL8A)+ACVALUE(PL8B))+(ACVALUE(DSRGP)))+((ACVALUE(511000)+ACVALUE(735013)+ACVALUE(511100))+(ACVALUE(511002)+ACVALUE(511101)+ACVALUE(554020)+ACVALUE(735015))+(ACVALUE(511003)+ACVALUE(511102)+ACVALUE(735016))+(ACVALUE(511004)+ACVALUE(554010)+ACVALUE(554021)+ACVALUE(735017)+ACVALUE(554030))))+(PLVALUE(PL23)+PLVALUE(PL24)+PLVALUE(PL25))",
+            "formula": "PLVALUE(PL28)+PLVALUE(PL26)",
             "status": 1,
             "type": 2,
             "parents": [
@@ -7383,7 +7384,7 @@
         {
             "_id": "5cf8c7a14aafe73cb56ce425",
             "code": "PL27",
-            "formula": "PLVALUE(PL22)+(PLVALUE(PL23)+PLVALUE(PL24)+PLVALUE(PL25))",
+            "formula": "PLVALUE(PL22)+PLVALUE(PL26)",
             "status": 1,
             "type": 2,
             "parents": [],
@@ -7401,7 +7402,7 @@
         {
             "_id": "5cf8c7bd4aafe73cb56ce426",
             "code": "PL26",
-            "formula": "(ACVALUE(511050)+ACVALUE(511010))+(ACVALUE(502031)+ACVALUE(735018)+ACVALUE(511007)+ACVALUE(511104)+ACVALUE(511006)+ACVALUE(511105)+ACVALUE(511005)+ACVALUE(735019)+ACVALUE(511103)+ACVALUE(735021)+ACVALUE(501021)+ACVALUE(501031)+ACVALUE(501011)+ACVALUE(501041)+ACVALUE(511051)+ACVALUE(511052)+ACVALUE(511053)+ACVALUE(511054)+ACVALUE(511008)+ACVALUE(735022)+ACVALUE(552011)+ACVALUE(552021)+ACVALUE(552031)+ACVALUE(552041))+(ACVALUE(511020)+ACVALUE(511090)+ACVALUE(511030)+ACVALUE(511999)+ACVALUE(511040)+ACVALUE(511070)+ACVALUE(511041))",
+            "formula": "PLVALUE(PL23)+PLVALUE(PL24)+PLVALUE(PL25)",
             "status": 1,
             "type": 2,
             "parents": [
@@ -7685,7 +7686,7 @@
         {
             "_id": "5d2841fee765f26e9e2f0e0e",
             "code": "PL87",
-            "formula": "((PLVALUE(PL30) - PLVALUE(PL57))+(PLVALUE(PL59)+PLVALUE(PL61)+PLVALUE(PL65))-(PLVALUE(PL67)+PLVALUE(PL69)+PLVALUE(PL72)))+(()+(ACVALUE(731010))+())-((ACVALUE(731010))+(ACVALUE(781011)+ACVALUE(781010))+()+()+(ACVALUE(781012))+()+())",
+            "formula": "PLVALUE(PL74)+PLVALUE(PL78)-PLVALUE(PL86)",
             "status": 1,
             "type": 2,
             "parents": [
@@ -7725,7 +7726,7 @@
         {
             "_id": "5d3ea8678a48f10306b33443",
             "code": "PL49",
-            "formula": "(ACVALUE(651010)+ACVALUE(651000)+ACVALUE(642023)+ACVALUE(643020)+ACVALUE(653010))+()+(ACVALUE(643010))+(ACVALUE(654012)+ACVALUE(654016)+ACVALUE(654013)+ACVALUE(654017)+ACVALUE(654026)+ACVALUE(642010)+ACVALUE(654019)+ACVALUE(654014)+ACVALUE(654022)+ACVALUE(654020)+ACVALUE(654023)+ACVALUE(654024)+ACVALUE(654015)+ACVALUE(654011)+ACVALUE(654018)+ACVALUE(654025))+(ACVALUE(652010))+()+(ACVALUE(651020)+ACVALUE(642000)+ACVALUE(642001)+ACVALUE(642019)+ACVALUE(642030)+ACVALUE(642020)+ACVALUE(642011)+ACVALUE(642021)+ACVALUE(642022))+(ACVALUE(641030)+ACVALUE(641020)+ACVALUE(641000)+ACVALUE(641010)+ACVALUE(511060))",
+            "formula": "PLVALUE(PL48)+PLVALUE(PL47)+PLVALUE(PL46)+PLVALUE(PL45)+PLVALUE(PL43)+PLVALUE(PL44)+PLVALUE(PL42)+PLVALUE(PL41)",
             "status": 1,
             "type": 2,
             "parents": [],
@@ -7789,4 +7790,5 @@
             ],
             "totalCurrentYear": 0
         }
-        ]
+    ]
+}
